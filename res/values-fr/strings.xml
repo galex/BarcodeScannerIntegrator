@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bsi_default_message">Cette application nécessite Barcode Scanner. Voulez-vous l\'installer ?</string>
+    <string name="bsi_default_title">Installer Barcode Scanner?</string>
+    <string name="bsi_yes">Oui</string>
+    <string name="bsi_no">Non</string>
+</resources>

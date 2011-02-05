@@ -1,0 +1,10 @@
+== Barcode Scanner Integrator
+
+This is a simple Android Library project that include the official integration package of Barcode Scanner for Android, but benefits
+of the advantages of an Android library project to override the AlertDialog strings (Title, message, yes, no).
+
+= Please help !
+
+1. Fork this library
+2. Add your own values language folder and translate those baddas resources.
+3. Pull request !
