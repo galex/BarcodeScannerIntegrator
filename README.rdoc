@@ -6,5 +6,5 @@ of the advantages of an Android library project to override the AlertDialog stri
 = Please help !
 
 1. Fork this library
-2. Add your own values language folder and translate those baddas resources.
+2. Add your own values language folder and translate those baddas string resources.
 3. Pull request !
