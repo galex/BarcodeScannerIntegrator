@@ -3,8 +3,26 @@
 This is a simple Android Library project that include the official integration package of Barcode Scanner for Android, but benefits
 of the advantages of an Android library project to override the AlertDialog strings (Title, message, yes, no).
 
+= How to use it
+
+1. Import this project into your workspace
+2. Define this project as an Android Project library your app depends on.
+3. Call this function into your activity 
+
+    IntentIntegrator.initiateScan(Activity.this);
+    
+4. Implement onActivityResult into your activity
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+        super.onActivityResult(requestCode, resultCode, intent);
+        IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+        if (scanResult != null) {
+            // your code here
+        }
+    }
+
 = Please help !
 
-1. Fork this library
+1. Fork this library.
 2. Add your own values language folder and translate those baddas string resources.
-3. Pull request !
+3. I'll be happy to accept pull requests.
