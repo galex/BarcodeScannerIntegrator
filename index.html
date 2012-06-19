@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Barcodescannerintegrator : Barcode Scanner IntentIntegrator as an Android Library project" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Barcodescannerintegrator</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/galex/BarcodeScannerIntegrator">View on GitHub</a>
+
+          <h1 id="project_title">Barcodescannerintegrator</h1>
+          <h2 id="project_tagline">Barcode Scanner IntentIntegrator as an Android Library project</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/galex/BarcodeScannerIntegrator/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/galex/BarcodeScannerIntegrator/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>== Barcode Scanner Integrator</p>
+
+<p>This is a simple Android Library project that include the official integration package of Barcode Scanner for Android, but benefits
+of the advantages of an Android library project to override the AlertDialog strings (Title, message, yes, no).</p>
+
+<p>= How to use it</p>
+
+<ol>
+<li>Import this project into your workspace</li>
+<li>Define this project as an Android Project library your app depends on.</li>
+<li>
+<p>Call this function into your activity </p>
+
+<p>IntentIntegrator.initiateScan(Activity.this);</p>
+</li>
+<li>
+<p>Implement onActivityResult into your activity</p>
+
+<p>protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+    super.onActivityResult(requestCode, resultCode, intent);
+    IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+    if (scanResult != null) {
+        // your code here
+    }
+}</p>
+</li>
+</ol><p>= Please help !</p>
+
+<ol>
+<li>Fork this library.</li>
+<li>Add your own values language folder and translate those baddas string resources.</li>
+<li>I'll be happy to accept pull requests.</li>
+</ol>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Barcodescannerintegrator maintained by <a href="https://github.com/galex">galex</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
